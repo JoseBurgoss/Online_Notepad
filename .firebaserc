@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "online-notepad-397211",
+    "online-notepad": "bloc-de-notas-6a550"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
