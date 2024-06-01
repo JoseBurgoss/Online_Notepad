@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Online Notepad - made with React and Firebase
 
 ## Project objectives
@@ -70,3 +71,6 @@ $ firebase deploy --only hosting
 
 ## Author
 - GitHub - [albina0104](https://github.com/albina0104)
+=======
+# online-notepad
+>>>>>>> 5a9a3894adc95af467904c44d876a6e911996b04
