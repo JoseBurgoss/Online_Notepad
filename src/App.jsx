@@ -7,7 +7,7 @@ import {
   Route,
 } from 'react-router-dom';
 import AuthContextProvider, { useAuthContext } from './context/AuthContext';
-import FirestoreContextProvider from './context/FirestoreContext';
+import FirestoreContextProvider from '/context/FirestoreContext';
 import Navbar from './components/Navbar.jsx';
 import Index from './components/Index.jsx';
 import NoteList from './components/NoteList.jsx';
