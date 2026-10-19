@@ -2,7 +2,16 @@
 
 A single-page notes app built with React and Firebase: sign in with Google, then create, edit, color, search and delete your own notes stored in Cloud Firestore.
 
-**Live demo:** https://online-notepad-jade.vercel.app/
+**Live demo:** https://notepad.burgo.dev (front-end demo without backend, see below)
+
+## Demo sin backend
+
+University project. The public demo runs without Firebase: by default `npm run build` swaps
+`src/handlers/auth.js` and `src/handlers/firestore.js` for `auth.demo.js` and `firestore.demo.js`
+(Vite plugin in `vite.config.js`), so sign-in is simulated and notes live in the browser's
+`localStorage`, seeded with fictitious examples. A banner offers **Reiniciar demo** to restore
+the initial state. To build the original Firebase version set `VITE_BACKEND=firebase` and the
+`VITE_FIREBASE_*` variables.
 
 ## Features
 
@@ -71,8 +80,8 @@ firestore.rules   # Per-user access rules for the notes collection
 
 ## Español
 
-Aplicación web de notas hecha con React, Vite y Firebase. Permite iniciar sesión con Google y crear, editar, cambiar de color, buscar y eliminar notas propias guardadas en Firestore, protegidas por reglas de seguridad por usuario. Demo: https://online-notepad-jade.vercel.app/
+Aplicación web de notas hecha con React, Vite y Firebase. Permite iniciar sesión con Google y crear, editar, cambiar de color, buscar y eliminar notas propias guardadas en Firestore, protegidas por reglas de seguridad por usuario. Proyecto universitario. Demo sin backend (sesión simulada y notas en `localStorage`): https://notepad.burgo.dev
 
 ---
 
-Author: José Burgos — https://jose-burgos-portfolio.vercel.app · https://www.linkedin.com/in/jose-burgos-/
+Author: José Burgos — https://jose.burgo.dev · https://www.linkedin.com/in/jose-burgos-/

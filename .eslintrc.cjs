@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  globals: { __DEMO__: 'readonly' },
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',

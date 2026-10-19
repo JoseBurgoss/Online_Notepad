@@ -17,6 +17,7 @@ import ProtectedRoute from './components/ProtectedRoute.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import NotFound from './components/NotFound.jsx';
 import { About } from './components/About';
+import DemoBanner from './demo/DemoBanner.jsx';
 
 function Router() {
   const { currentUser, authenticate, userLoading } = useAuthContext();
@@ -83,7 +84,10 @@ function App() {
   return (
     <AuthContextProvider>
       <FirestoreContextProvider>
-        <Router />
+        <>
+          <Router />
+          {__DEMO__ && <DemoBanner />}
+        </>
       </FirestoreContextProvider>
     </AuthContextProvider>
   );
